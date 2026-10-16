@@ -1,0 +1,11 @@
+{
+  "last_processed_line": 113,
+  "total_ingested": 113,
+  "total_verified": 6,
+  "total_discarded": 107,
+  "unprocessed_verified_count": 0,
+  "last_dpo_run_timestamp": "2026-10-15T22:32:24.834636+00:00",
+  "last_dpo_decision": "PROCEED_DEPLOY",
+  "active_model_tag": "rlhf-clinical-dpo-1792103544",
+  "is_running": false
+}

@@ -1,0 +1,52 @@
+{
+  "ceiling_stats": {
+    "identifiability_ceiling": 0.5689,
+    "unique_symptom_profiles": 173820,
+    "ambiguous_profiles": 16687,
+    "ambiguous_profile_fraction": 0.096,
+    "total_records": 305530,
+    "majority_agreeing_records": 173820
+  },
+  "deduplication": {
+    "enabled": true,
+    "raw_records": 377344,
+    "after_dedup": 305530,
+    "duplicates_removed": 71814
+  },
+  "mesh_filter_enabled": true,
+  "mesh_labels_excluded": [
+    "Abdominal Pain",
+    "Anoxia",
+    "Anxiety",
+    "Blindness",
+    "Body Weight",
+    "Chills",
+    "Cough",
+    "Depression",
+    "Diarrhea",
+    "Dizziness",
+    "Dyspnea",
+    "Edema",
+    "Fatigue",
+    "Fever",
+    "Headache",
+    "Insomnia",
+    "Muscle Weakness",
+    "Nausea",
+    "Obesity",
+    "Pain",
+    "Paralysis",
+    "Rash",
+    "Seizures",
+    "Sweating",
+    "Vomiting",
+    "Weight Loss"
+  ],
+  "min_disease_support": 100,
+  "split": {
+    "train": 231720,
+    "val": 28966,
+    "test": 28966,
+    "train_fraction": 0.8
+  }
+}

@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700;800&family=Syne:wght@700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-color: #f3f0e8;
+  --text-color: #000000;
+  --border-color: #000000;
+  --card-bg: #f3f0e8;
+  --card-hover-bg: #ffffff;
+  --accent-color: #000000;
+  --accent-text: #f3f0e8;
+  --shadow-color: #000000;
+  --shadow-offset: 4px;
+  --font-logo: 'Syne', sans-serif;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --accent-blue: #2f5df7;
+  --accent-green: #00a86b;
+  --accent-yellow: #fcd116;
+  --accent-red: #e63946;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #f3f0e8;
+  --border-color: #f3f0e8;
+  --card-bg: #1a1a1a;
+  --card-hover-bg: #242424;
+  --accent-color: #f3f0e8;
+  --accent-text: #121212;
+  --shadow-color: #f3f0e8;
+  --accent-blue: #5b82ff;
+  --accent-green: #26c485;
+  --accent-yellow: #ffe15d;
+  --accent-red: #ff5a5f;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  padding: 1.5rem;
+  line-height: 1.5;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.neo-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  border: 2px solid var(--border-color);
+  background-color: var(--card-bg);
+  box-shadow: 6px 6px 0px var(--shadow-color);
+}
+
+.neo-btn {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 2px solid var(--border-color);
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  box-shadow: 3px 3px 0px var(--shadow-color);
+  transition: transform 0.1s, box-shadow 0.1s, background-color 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.neo-btn:hover {
+  box-shadow: 5px 5px 0px var(--shadow-color);
+  transform: translate(-2px, -2px);
+}
+
+.neo-btn:active {
+  box-shadow: 1px 1px 0px var(--shadow-color);
+  transform: translate(2px, 2px);
+}
+
+.neo-btn-primary {
+  background-color: var(--accent-color);
+  color: var(--accent-text);
+}
+
+.neo-btn-danger {
+  background-color: var(--accent-red);
+  color: #ffffff;
+  border-color: var(--border-color);
+}
+
+.neo-badge {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1.5px solid var(--border-color);
+  padding: 0.15rem 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.neo-badge-green {
+  background-color: #d1fae5;
+  color: #065f46;
+  border-color: #065f46;
+}
+
+.neo-badge-red {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border-color: #991b1b;
+}
+
+.neo-badge-yellow {
+  background-color: #fef3c7;
+  color: #92400e;
+  border-color: #92400e;
+}
+
+@keyframes emergencyPulse {
+  0%, 100% {
+    box-shadow: 4px 4px 0px var(--shadow-color);
+  }
+  50% {
+    box-shadow: 6px 6px 0px var(--accent-red);
+  }
+}
+
+.pulse-emergency {
+  animation: emergencyPulse 1.8s infinite;
+}
+

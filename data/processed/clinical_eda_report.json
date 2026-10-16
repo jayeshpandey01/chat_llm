@@ -1,0 +1,321 @@
+{
+  "dataset_summary": {
+    "total_training_records": 231720,
+    "num_conditions": 580,
+    "num_unique_symptoms": 4117,
+    "sparsity_percentage": 99.92,
+    "class_imbalance_ratio": 17.05,
+    "min_class_frequency": 80,
+    "max_class_frequency": 1364
+  },
+  "symptom_presentation_profile": {
+    "mean_symptoms_per_patient": 3.91,
+    "median_symptoms_per_patient": 4.0,
+    "std_symptoms_per_patient": 2.58,
+    "min_symptoms_per_patient": 1,
+    "max_symptoms_per_patient": 43
+  },
+  "top_prevalent_symptoms": [
+    {
+      "symptom": "sharp_abdominal_pain",
+      "count": 19381,
+      "prevalence_pct": 8.36
+    },
+    {
+      "symptom": "vomiting",
+      "count": 17134,
+      "prevalence_pct": 7.39
+    },
+    {
+      "symptom": "cough",
+      "count": 14828,
+      "prevalence_pct": 6.4
+    },
+    {
+      "symptom": "nausea",
+      "count": 14721,
+      "prevalence_pct": 6.35
+    },
+    {
+      "symptom": "back_pain",
+      "count": 14505,
+      "prevalence_pct": 6.26
+    },
+    {
+      "symptom": "headache",
+      "count": 14038,
+      "prevalence_pct": 6.06
+    },
+    {
+      "symptom": "sharp_chest_pain",
+      "count": 13688,
+      "prevalence_pct": 5.91
+    },
+    {
+      "symptom": "fever",
+      "count": 13106,
+      "prevalence_pct": 5.66
+    },
+    {
+      "symptom": "shortness_of_breath",
+      "count": 11832,
+      "prevalence_pct": 5.11
+    },
+    {
+      "symptom": "nasal_congestion",
+      "count": 10273,
+      "prevalence_pct": 4.43
+    }
+  ],
+  "top_symptom_cooccurrences": [
+    {
+      "pair": "nausea + sharp_abdominal_pain",
+      "cooccurrence_count": 5691
+    },
+    {
+      "pair": "nausea + vomiting",
+      "cooccurrence_count": 5506
+    },
+    {
+      "pair": "sharp_abdominal_pain + vomiting",
+      "cooccurrence_count": 5249
+    },
+    {
+      "pair": "cough + fever",
+      "cooccurrence_count": 5141
+    },
+    {
+      "pair": "or_roughness + peeling",
+      "cooccurrence_count": 4977
+    },
+    {
+      "pair": "or_roughness + scaliness",
+      "cooccurrence_count": 4977
+    },
+    {
+      "pair": "or_roughness + skin_dryness",
+      "cooccurrence_count": 4977
+    },
+    {
+      "pair": "peeling + scaliness",
+      "cooccurrence_count": 4977
+    },
+    {
+      "pair": "peeling + skin_dryness",
+      "cooccurrence_count": 4977
+    },
+    {
+      "pair": "scaliness + skin_dryness",
+      "cooccurrence_count": 4977
+    }
+  ],
+  "top_overlapping_conditions": [
+    {
+      "condition_1": "Anomia",
+      "condition_2": "Aphasia, Broca",
+      "jaccard_overlap": 1.0,
+      "shared_symptoms_count": 3,
+      "shared_symptoms": [
+        "aphasia",
+        "dementia",
+        "epilepsy"
+      ]
+    },
+    {
+      "condition_1": "Articulation Disorders",
+      "condition_2": "Agnosia",
+      "jaccard_overlap": 1.0,
+      "shared_symptoms_count": 3,
+      "shared_symptoms": [
+        "aphasia",
+        "epilepsy",
+        "hearing_loss"
+      ]
+    },
+    {
+      "condition_1": "Mutism",
+      "condition_2": "Stuttering",
+      "jaccard_overlap": 1.0,
+      "shared_symptoms_count": 3,
+      "shared_symptoms": [
+        "aphasia",
+        "epilepsy",
+        "schizophrenia"
+      ]
+    },
+    {
+      "condition_1": "Apraxias",
+      "condition_2": "Anomia",
+      "jaccard_overlap": 0.75,
+      "shared_symptoms_count": 3,
+      "shared_symptoms": [
+        "aphasia",
+        "dementia",
+        "epilepsy"
+      ]
+    },
+    {
+      "condition_1": "Apraxias",
+      "condition_2": "Aphasia, Broca",
+      "jaccard_overlap": 0.75,
+      "shared_symptoms_count": 3,
+      "shared_symptoms": [
+        "aphasia",
+        "dementia",
+        "epilepsy"
+      ]
+    },
+    {
+      "condition_1": "Articulation Disorders",
+      "condition_2": "Auditory Perceptual Disorders",
+      "jaccard_overlap": 0.75,
+      "shared_symptoms_count": 3,
+      "shared_symptoms": [
+        "aphasia",
+        "epilepsy",
+        "hearing_loss"
+      ]
+    },
+    {
+      "condition_1": "Agnosia",
+      "condition_2": "Auditory Perceptual Disorders",
+      "jaccard_overlap": 0.75,
+      "shared_symptoms_count": 3,
+      "shared_symptoms": [
+        "aphasia",
+        "epilepsy",
+        "hearing_loss"
+      ]
+    },
+    {
+      "condition_1": "Language Disorders",
+      "condition_2": "Auditory Perceptual Disorders",
+      "jaccard_overlap": 0.667,
+      "shared_symptoms_count": 4,
+      "shared_symptoms": [
+        "aphasia",
+        "chronic",
+        "epilepsy",
+        "hearing_loss"
+      ]
+    },
+    {
+      "condition_1": "Dyslexia",
+      "condition_2": "Language Development Disorders",
+      "jaccard_overlap": 0.625,
+      "shared_symptoms_count": 5,
+      "shared_symptoms": [
+        "aphasia",
+        "epilepsy",
+        "hearing_loss",
+        "meningitis",
+        "schizophrenia"
+      ]
+    },
+    {
+      "condition_1": "Hemangioma",
+      "condition_2": "Rosacea",
+      "jaccard_overlap": 0.625,
+      "shared_symptoms_count": 10,
+      "shared_symptoms": [
+        "abnormal_appearing_skin",
+        "lymphedema",
+        "or_roughness",
+        "peeling",
+        "scaliness"
+      ]
+    }
+  ],
+  "sample_pathognomonic_markers": [
+    {
+      "condition": "Glaucoma",
+      "symptom": "itchy_eyelid",
+      "p_s_given_disease": 0.531,
+      "diagnostic_odds_ratio": 999.0
+    },
+    {
+      "condition": "Eye Alignment Disorder",
+      "symptom": "cross_eyed",
+      "p_s_given_disease": 0.524,
+      "diagnostic_odds_ratio": 999.0
+    },
+    {
+      "condition": "Eye Alignment Disorder",
+      "symptom": "eye_moves_abnormally",
+      "p_s_given_disease": 0.532,
+      "diagnostic_odds_ratio": 999.0
+    },
+    {
+      "condition": "Idiopathic Absence Of Menstruation",
+      "symptom": "absence_of_menstruation",
+      "p_s_given_disease": 0.511,
+      "diagnostic_odds_ratio": 999.0
+    },
+    {
+      "condition": "Anal Fissure",
+      "symptom": "vaginal_dryness",
+      "p_s_given_disease": 0.743,
+      "diagnostic_odds_ratio": 999.0
+    },
+    {
+      "condition": "Acute Kidney Injury",
+      "symptom": "kidney_mass",
+      "p_s_given_disease": 0.505,
+      "diagnostic_odds_ratio": 999.0
+    },
+    {
+      "condition": "Hypertensive Heart Disease",
+      "symptom": "recent_pregnancy",
+      "p_s_given_disease": 0.508,
+      "diagnostic_odds_ratio": 999.0
+    },
+    {
+      "condition": "Polycystic Ovarian Syndrome (Pcos)",
+      "symptom": "absence_of_menstruation",
+      "p_s_given_disease": 0.619,
+      "diagnostic_odds_ratio": 999.0
+    },
+    {
+      "condition": "Ear Drum Damage",
+      "symptom": "pus_draining_from_ear",
+      "p_s_given_disease": 0.634,
+      "diagnostic_odds_ratio": 999.0
+    },
+    {
+      "condition": "Irritable Bowel Syndrome",
+      "symptom": "flatulence",
+      "p_s_given_disease": 0.606,
+      "diagnostic_odds_ratio": 999.0
+    },
+    {
+      "condition": "Social Phobia",
+      "symptom": "excessive_appetite",
+      "p_s_given_disease": 0.587,
+      "diagnostic_odds_ratio": 999.0
+    },
+    {
+      "condition": "Prostate Cancer",
+      "symptom": "flushing",
+      "p_s_given_disease": 0.619,
+      "diagnostic_odds_ratio": 999.0
+    },
+    {
+      "condition": "Breast Infection (Mastitis)",
+      "symptom": "pain_or_soreness_of_breast",
+      "p_s_given_disease": 0.534,
+      "diagnostic_odds_ratio": 997.6
+    },
+    {
+      "condition": "Heart Attack",
+      "symptom": "burning_chest_pain",
+      "p_s_given_disease": 0.52,
+      "diagnostic_odds_ratio": 993.15
+    },
+    {
+      "condition": "Eustachian Tube Dysfunction (Ear Disorder)",
+      "symptom": "swollen_or_red_tonsils",
+      "p_s_given_disease": 0.502,
+      "diagnostic_odds_ratio": 982.14
+    }
+  ]
+}
