@@ -326,3 +326,7 @@ def create_app(
             raise HTTPException(status_code=500, detail=str(e)) from e
 
     return app
+
+
+# Default ASGI application instance for standard runners (e.g. uvicorn apps.server:app)
+app = create_app()
